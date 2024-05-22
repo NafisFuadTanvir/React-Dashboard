@@ -1,15 +1,20 @@
-
-import Navigationbar from './Components/Navigationbar/Navigationbar'
-
+import Dashboard from "./Components/Dashboard";
+import Navigationbar from "./Components/Navigationbar/Navigationbar";
 
 function App() {
-
-
   return (
     <>
-      <Navigationbar></Navigationbar>
+      <div className="w-full flex">
+        <Navigationbar></Navigationbar>
+       
+       <main className="">
+
+       <Dashboard></Dashboard>
+       </main>
+        
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
